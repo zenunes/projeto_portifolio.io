@@ -1,0 +1,42 @@
+.worked{
+    border-top: 0.1rem solid var(--primary-light);
+    padding: 8rem 2rem;
+    text-align: center;
+    color: var(--primary);
+}
+
+.worked .title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+
+}
+.worked .grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.worked .grid img{
+    width: 100%;
+}
+
+@media (width > 600px) {
+    .worked .title{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .worked .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (width > 900px) {
+    .worked .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
